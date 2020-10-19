@@ -1,5 +1,5 @@
-import { interval, Observable, timer } from 'rxjs';
-import { map, repeat, scan, startWith, take } from 'rxjs/operators';
+import { Observable, timer } from 'rxjs';
+import { repeat, take } from 'rxjs/operators';
 import { NumberSpeed } from './stopwatch-config';
 
 export class DisplayedNumber {

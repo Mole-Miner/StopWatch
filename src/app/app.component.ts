@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { zip, fromEvent,interval, Observable, range, Subscription, merge, NEVER, of, timer} from 'rxjs';
-import { buffer, debounceTime, map, repeat, filter, debounce, mapTo, scan, startWith, switchMap, takeWhile, take, mergeMap, delay, mergeAll, tap, combineAll } from 'rxjs/operators';
+import { fromEvent, Observable, merge, NEVER } from 'rxjs';
+import { buffer, debounceTime, map, filter, mapTo, switchMap, tap } from 'rxjs/operators';
 import { DisplayedNumberService } from './stopwatch/displayed-number.service';
 import { NumberKey } from './stopwatch/stopwatch-config';
 
