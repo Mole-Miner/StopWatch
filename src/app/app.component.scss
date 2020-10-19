@@ -1,27 +1,50 @@
+.stopwatch,
+.numbers,
+.buttons {
+    display: flex;
+}
+
+.numbers,
+.buttons {
+    height: 100%;
+    align-items: center;
+}
+
+.stopwatch,
+.numbers {
+    flex-direction: row;
+}
+
 .stopwatch {
     width: 400px;
     height: 300px;
-    display: flex;
-    flex-direction: row;
     border: 1px solid gray;
 
     .numbers {
         width: 300px;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
         font-size: 25px;
     }
 
     .buttons {
         width: 100px;
-        height: 100%;
-        display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
         border-left: 1px solid gray;
+    }
+}
+
+@media (max-width: 480px) {
+    .stopwatch {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+
+        .buttons {
+            width: 100%;
+            flex-direction: row;
+            border-top: 1px solid gray;
+            border-left: none;
+        }
     }
 }
